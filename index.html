@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PopUp - by Shikhar</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        <div class="container">
+            <button class="btn" id="btn" type="submit" onclick="openPopup()">Chanted 16 rounds</button>
+            <div class="popup" id="popup">
+                <img src="404-tick.png">
+                <h2>You are a sincere devotee!</h2>
+                <p>Because you are following the instructions of pure devotee.</p>
+                <button type="button" onclick="closePopup()">Haribol!!!</button>
+            </div>
+        </div>
+
+        <script>
+            function openPopup(){
+                popup.classList.add("open-popup");
+            }
+            function closePopup(){
+                popup.classList.remove("open-popup");
+            }
+        </script>
+    </body>
+</html>
